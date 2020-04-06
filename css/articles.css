@@ -11,6 +11,9 @@
 
    
 }
+a:hover{
+    cursor: pointer;
+}
 .article_container{
     padding-top: 3%;
     padding-bottom: 3%;
@@ -39,7 +42,6 @@
 }
 
 .movie_title{
-    position:relative;
     height: 1rem;
     width: 80%;
     margin: 50px auto; 

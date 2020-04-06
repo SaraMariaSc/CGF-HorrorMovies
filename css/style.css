@@ -160,6 +160,7 @@ body {
 }
 
 .footer{
+    position: relative;
     padding: 2%;
     background-color: rgb(87, 1, 8);
     font-size: 0.9vw;
