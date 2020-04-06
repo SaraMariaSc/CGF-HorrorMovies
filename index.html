@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
         <title>Horror Film Reviews</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="css/flexboxgrid.min.css" type="text/css">
@@ -9,19 +11,24 @@
     </head>
     <body>
         
-        <!--Title-->
+        <!--Title
         <section id="cover" class="min-vh-100">
             <div id="cover-caption" class="container text-center">
                     <div class="container text-center justify-content-center" >
                         <div class="row text-white text-center justify-content-center">
                             <div class="mx-auto text-center form p-4">
-                                <h1 class="display-4 py-2 text-truncate"><b><i>Boo</i></b></h1>
+                                <h1 class="display-4 py-2 text-truncate"><b><i>Horror Movies</i></b></h1>
                                 More text, even more
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </section>-->
+       <section>
+
+        <section class="title_container">
+            <h1><b><i>Horror Movies</i></b></h1>
         </section>
 
         
@@ -31,14 +38,14 @@
                     <source src = "static/index_video.mp4"  type = "video/mp4">
             </video>
         </div>
-
+</section>
         <!--Menu-->
         <div class="frontpage"> </div>
         <div id='nav'>
             <ul>
                 <li><a href="index.html" class='active'>Home</a></li>
-                <li><a href="#category1">Most Popular</a></li>
-                <li><a href="#category2">Top Rated</a></li>
+                <li><a href="#category1">Popular</a></li>
+                <li><a href="#category2">Cult Favourites</a></li>
             </ul>
         </div>
         
@@ -58,7 +65,11 @@
         </script>
 
         <!-- Carousel area -->
-        <section >
+        
+        <section class="carousel_area">
+            <h2 class="section_subtitle">CATEGORIES</h2>
+        <section id="category1">
+            <h2 class="category">Popular</h2>
             <div class = "carousel">
                 <button class="carousel_button carousel_button--left">
                     <img src="./img/left_arrow.png" alt="left arrow">
@@ -118,7 +129,9 @@
             <script src="./js/carousel.js"></script>
         </section>
 
-        <section >
+        <section id="category2">
+           
+            <h2 class="category">Cult Favourites</h2>
             <div class = "carousel">
                 <button class="carousel_button carousel_button--left2">
                     <img src="./img/left_arrow.png" alt="left arrow">
@@ -169,7 +182,7 @@
                                 </li>
                             </ul>
                         </li>
-                </ul>
+                    </ul>
                 </div>
                 <button class="carousel_button carousel_button--right2">
                     <img src="./img/right_arrow.png" alt="right arrow">
@@ -177,5 +190,12 @@
             </div>
             <script src="./js/carousel2.js"></script>
         </section>
+    </section>
+    <section class="footer">
+        <div class="footer_text">
+            <p>Code First Girls 2020</p>
+            <p>Designed in London by Kitti, Sabina and Sara</p>
+        </div>
+    </section>
     </body>
 </html>

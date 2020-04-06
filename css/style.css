@@ -1,3 +1,29 @@
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: black;
+}
+.title_container{
+    position: absolute;
+    margin:5rem auto; 
+    height: 9em;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 18rem; 
+    
+} 
+.title_container h1{
+    color: rgba(214, 214, 214, 0.856);
+    margin: 0; 
+    font-size: 5vw;
+    text-align: center;
+}
+.carousel_area{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background-color: black;
+}
 .carousel{
     position:relative;
     height: 25rem;
@@ -106,11 +132,36 @@
     width:100%;
     padding: 0;
     margin:0;
-    height: 100%;
-    
-
-    
+    height: 100%;    
 }
 .movie_button:hover{
     opacity: 0.5;
+}
+
+.section_subtitle{
+    position:relative;
+    height: 1rem;
+    width: 80%;
+    margin: 0px auto; 
+    display: block;
+    padding-top: 4%;
+    font-size: 1.5vw;
+    color: rgb(209, 209, 209);
+}
+.category{
+    position:relative;
+    height: 1rem;
+    width: 80%;
+    padding-top: 3%;
+    margin: 0px auto; 
+    display: block;
+    font-size: 1.5vw;
+    color: rgb(209, 209, 209);
+}
+
+.footer{
+    padding: 2%;
+    background-color: rgb(87, 1, 8);
+    font-size: 0.9vw;
+    color: rgb(209, 209, 209);
 }
