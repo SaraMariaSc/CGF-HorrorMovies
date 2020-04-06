@@ -1,27 +1,181 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <title>Horror Film Reviews</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/flexboxgrid.min.css" type="text/css">
+        <link rel="stylesheet" href="css/style.css" type="text/css">
         <link rel="stylesheet" href="static/index_css.css">
     </head>
     <body>
-        <div class="fullscreen-bg">
-            <video loop muted autoplay  poster="index_poster.png" title="Video" class="fullscreen-bg__video">
-                    <source src = "static/index_video.mp4"  type = "video/mp4">
-            </video>
-        </div>
+        
+        <!--Title-->
         <section id="cover" class="min-vh-100">
-        <div id="cover-caption" class="container text-center">
-                <div class="container text-center justify-content-center" >
-                    <div class="row text-white text-center justify-content-center">
-                        <div class="mx-auto text-center form p-4">
-                            <h1 class="display-4 py-2 text-truncate"><b><i>Boo</i></b></h1>
-                            More text, even more
+            <div id="cover-caption" class="container text-center">
+                    <div class="container text-center justify-content-center" >
+                        <div class="row text-white text-center justify-content-center">
+                            <div class="mx-auto text-center form p-4">
+                                <h1 class="display-4 py-2 text-truncate"><b><i>Boo</i></b></h1>
+                                More text, even more
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </section>
+
+        
+        <div class="fullscreen-bg">
+
+            <video loop muted autoplay  poster="index_poster.png" title="Video" class="fullscreen-bg__video">
+                    <source src = "static/index_video.mp4"  type = "video/mp4">
+            </video>
         </div>
+
+        <!--Menu-->
+        <div class="frontpage"> </div>
+        <div id='nav'>
+            <ul>
+                <li><a href="index.html" class='active'>Home</a></li>
+                <li><a href="#category1">Most Popular</a></li>
+                <li><a href="#category2">Top Rated</a></li>
+            </ul>
+        </div>
+        
+        <script >
+            window.onscroll = function() {myFunction()};
+            var nav = document.getElementById("nav");
+            var sticky = nav.offsetTop;
+
+            function myFunction() {
+                if (window.pageYOffset >= sticky) {
+                    nav.classList.add("sticky")
+                } else {
+                    nav.classList.remove("sticky");
+                }
+            }
+            
+        </script>
+
+        <!-- Carousel area -->
+        <section >
+            <div class = "carousel">
+                <button class="carousel_button carousel_button--left">
+                    <img src="./img/left_arrow.png" alt="left arrow">
+                </button>
+                <div class = "carousel_track-container">
+                    <ul class="carousel_track">
+                        <li class = "carousel_slide current-slide">
+                            <ul class="carousel_slide_page">
+                                <li class="carousel_individual_slide"> 
+                                    <a class="movie_button" href="./pages/theconjuring.html"><img class="carousel_image" src = "./img/popular/theconjuring.jpg" alt="3"></a>
+                                </li>
+                                <li class="carousel_individual_slide"> 
+                                    <a class="movie_button" href="./pages/hereditary.html"><img class="carousel_image" src = "./img/popular/hereditary.jpg" alt="3"></a>
+                                </li>
+                                <li class="carousel_individual_slide"> 
+                                    <a class="movie_button" href="./pages/itch2.html"><img class="carousel_image" src = "./img/popular/itch2.jpg" alt="3"></a>
+                                </li>
+                                <li class="carousel_individual_slide"> 
+                                    <a class="movie_button" href="./pages/midsommar.html"><img class="carousel_image" src = "./img/popular/midsommar.jpg" alt="3"></a>
+                                </li>
+                                <li class="carousel_individual_slide"> 
+                                    <a class="movie_button" href="./pages/theinvisibleman.html"><img class="carousel_image" src = "./img/popular/theinvisibleman.jpg" alt="3"></a>
+                                </li>
+                                <li class="carousel_individual_slide"> 
+                                    <a class="movie_button" href="./pages/us.html"> <img class="carousel_image" src = "./img/popular/us.jpg" alt="3"></a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class = "carousel_slide">
+                            <ul class="carousel_slide_page">
+                                <li class="carousel_individual_slide"> 
+                                    <a class="movie_button" href="./pages/thebabadook.html"><img class="carousel_image" src = "./img/popular/thebabadook.jpg" alt="3"></a>
+                                </li>
+                                <li class="carousel_individual_slide"> 
+                                    <a class="movie_button" href="./pages/mother.html"> <img class="carousel_image" src = "./img/popular/mother.jpg" alt="3"></a>
+                                </li>
+                                <li class="carousel_individual_slide"> 
+                                    <a class="movie_button" href="./pages/itfollows.html"> <img class="carousel_image" src = "./img/popular/itfollows.jpg" alt="3"></a>
+                                </li>
+                                <li class="carousel_individual_slide"> 
+                                    <a class="movie_button" href="./pages/aquietplace.html"> <img class="carousel_image" src = "./img/popular/aquietplace.jpg" alt="3"></a>
+                                </li>
+                                <li class="carousel_individual_slide"> 
+                                    <a class="movie_button" href="./pages/thecabininthewoods.html"> <img class="carousel_image" src = "./img/popular/thecabininthewoods.jpg" alt="3"></a>
+                                </li>
+                                <li class="carousel_individual_slide"> 
+                                    <a class="movie_button" href="./pages/thewitch.html"> <img class="carousel_image" src = "./img/popular/thewitch.jpg" alt="3"></a>
+                                </li>
+                            </ul>
+                        </li>          
+                    </ul>
+                </div>
+                <button class="carousel_button carousel_button--right">
+                    <img src="./img/right_arrow.png" alt="right arrow">
+                </button>             
+            </div>
+            <script src="./js/carousel.js"></script>
+        </section>
+
+        <section >
+            <div class = "carousel">
+                <button class="carousel_button carousel_button--left2">
+                    <img src="./img/left_arrow.png" alt="left arrow">
+                </button>
+                <div class = "carousel_track-container">
+                    <ul class="carousel_track2">
+                        <li class = "carousel_slide current-slide2">
+                            <ul class="carousel_slide_page">
+                                <li class="carousel_individual_slide"> 
+                                    <a class="movie_button" href="./pages/alien.html"><img class="carousel_image" src = "./img/cult/alien.jpg" alt="3"></a>
+                                </li>
+                                <li class="carousel_individual_slide"> 
+                                    <a class="movie_button" href="./pages/carrie.html"><img class="carousel_image" src = "./img/cult/carrie.jpg" alt="3"></a>
+                                </li>
+                                <li class="carousel_individual_slide"> 
+                                    <a class="movie_button" href="./pages/evildead.html"><img class="carousel_image" src = "./img/cult/evildead.jpg" alt="3"></a>
+                                </li>
+                                <li class="carousel_individual_slide"> 
+                                    <a class="movie_button" href="./pages/scream.html"><img class="carousel_image" src = "./img/cult/scream.jpg" alt="3"></a>
+                                </li>
+                                <li class="carousel_individual_slide"> 
+                                    <a class="movie_button" href="./pages/thesilenceofthelambs.html"><img class="carousel_image" src = "./img/cult/thesilenceofthelambs.jpg" alt="3"></a>
+                                </li>
+                                <li class="carousel_individual_slide"> 
+                                    <a class="movie_button" href="./pages/theshining.html"> <img class="carousel_image" src = "./img/cult/theshining.jpg" alt="3"></a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class = "carousel_slide">
+                            <ul class="carousel_slide_page">
+                                <li class="carousel_individual_slide"> 
+                                    <a class="movie_button" href="./pages/jaws.html"><img class="carousel_image" src = "./img/cult/jaws.jpg" alt="3"></a>
+                                </li>
+                                <li class="carousel_individual_slide"> 
+                                    <a class="movie_button" href="./pages/theexorcist.html"> <img class="carousel_image" src = "./img/cult/theexorcist.jpg" alt="3"></a>
+                                </li>
+                                <li class="carousel_individual_slide"> 
+                                    <a class="movie_button" href="./pages/thering.html"> <img class="carousel_image" src = "./img/cult/thering.jpg" alt="3"></a>
+                                </li>
+                                <li class="carousel_individual_slide"> 
+                                    <a class="movie_button" href="./pages/haalloween.html"> <img class="carousel_image" src = "./img/cult/halloween.jfif" alt="3"></a>
+                                </li>
+                                <li class="carousel_individual_slide"> 
+                                    <a class="movie_button" href="./pages/rosmarysbaby.html"> <img class="carousel_image" src = "./img/cult/rosmarysbaby.jpg" alt="3"></a>
+                                </li>
+                                <li class="carousel_individual_slide"> 
+                                    <a class="movie_button" href="./pages/theblairwitchproject.html"> <img class="carousel_image" src = "./img/cult/theblairwitchproject.jpg" alt="3"></a>
+                                </li>
+                            </ul>
+                        </li>
+                </ul>
+                </div>
+                <button class="carousel_button carousel_button--right2">
+                    <img src="./img/right_arrow.png" alt="right arrow">
+                </button>
+            </div>
+            <script src="./js/carousel2.js"></script>
         </section>
     </body>
 </html>
