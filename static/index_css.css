@@ -8,13 +8,13 @@ html, body{
   
 }
 
-#nav {  
+#nav { 
   overflow: hidden;
   width: 100%;
   height: 50px;
   text-align: center;
-  z-index: 1;
-  background-color: rgba(163, 4, 18, 0.502);
+  z-index: 4;
+  background-color: rgb(124, 37, 44);
 }
 
 #nav ul li {
