@@ -12,72 +12,77 @@
     </head>
 
     <body style="background-color: black;">    
-        <div class="fullscreen-bg">
+        <section class="page-container">
+            <section class="content-wrap">
+                <div class="fullscreen-bg">
 
-            <video loop muted autoplay  poster="../img/posters/hereditary-poster.jpg" title="Video" class="fullscreen-bg__video">
-                    <source src = "../videos/hereditary.mp4"  type = "video/mp4">
-            </video>
-        </div>
-        <!--Menu-->
-        <div class="frontpage"> </div>
-        <div id='nav'>
-            <ul>
-                <li><a href="../index.html" class='active'>Home</a></li>
-                <li><a  title="Click to do something" href="#" onclick="changeToNospoiler();return false;">No Spoilers</a></li>
-                <li><a   title="Click to do something" href="#" onclick="changeToSpoiler();return false;">Spoilers</a></li> 
-            </ul>
-        </div>
-        
-        <script >
-            window.onscroll = function() {myFunction()};
-            var nav = document.getElementById("nav");
-            var sticky = nav.offsetTop;
-
-            function myFunction() {
-                if (window.pageYOffset >= sticky) {
-                    nav.classList.add("sticky")
-                } else {
-                    nav.classList.remove("sticky");
-                }
-            }
-            
-        </script>
-        
-        <!-- Article-->
-        <section class="content">
-            <!-- Change text-->
-            <script >
-                function changeToNospoiler(){
-                    document.getElementById("current_article").innerHTML = "The film follows the Grahams, who are dealing with their grief after the death of their matriarch. Daughter Annie (Toni Collette), her husband Steve (Gabriel Byrne), and her son and daughter (Alex Wolfe and Milly Shapiro) all deal with it in different ways. Annie throws herself into her work, building miniature dioramas with painstaking detail. Steve tries to hold everyone together. Peter smokes tons of weed and hits on girls, seemingly unaffected. And Charlie… well, she was closer to grandma than anyone else. Soon she starts seeing her places. And mutilates a dead bird. And makes frightening sculptures…<br><br>After another horrific event occurs, and things take a sharp turn into the horrific and gothic landscape the trailers promised. You will find zero spoilers here — suffice to say that things get dark. Really dark — the kind of dark that will have you squirming in your seat and maybe turning away when it becomes too much. By the end you realize you have been so engrossed in what is unfolding in front of your eyes that you are not breathing correctly, and your fingers hurt from gripping the armrests. <br><br>The cast is excellent. There is just something so special about watching actors operating on such a high level. Collette has never been better — her manic nature as the film progresses is a sight to behold. Byrne does some of his best work playing the husband who cannot feel anything but helplessly watch as his life unravels. Both kids are great, with Wolfe standing out especially. Without getting into spoilers, he is asked to do a lot and delivers in spades right up until the end shots. Milly Shapiro does so much with just a look on her face and a click of her tongue. <br><br>";
-                }
-                function changeToSpoiler(){
-                    document.getElementById("current_article").innerHTML =  "The film starts with an obituary for Ellen Leigh, who is survived by her daughter Annie Graham (Toni Collette) and her grandchildren. Annie attends her mother's funeral with her husband Steven (Gabriel Byrne) and their kids Peter (Alex Wolff) and Charlie (Milly Shapiro). Annie gives a eulogy for her mother, pointing out that there are people there that she doesn't know and that Ellen was into things that Annie knew little about.<br><br>At Charlie's school, a bird hits a window during a test. After class, Charlie swipes a pair of scissors and cuts the bird's head off. She brings it home and makes a doll with it. In her room, she notices a blue flash of light surrounding her. She then walks outside and sees what appears to be Ellen surrounded by flames before Annie scolds her and pulls her back into the house. Peter asks Annie if he can borrow one of his parents' cars to go to a party, and Annie makes him take Charlie with him.<br><br>At the party, Peter leaves Charlie alone while he goes to smoke weed. She eats chocolate cake with nuts in it and she begins to suffer an allergic reaction before going into anaphylactic shock. Peter rushes Charlie to the hospital, and she opens the window to stick her head out and breathe better. Peter sees an animal on the side of the road and swerves hard, causing Charlie's head to hit a telephone pole, decapitating her. Peter sits in shock and silence before driving home slowly and quietly going home. The next morning, he hears Annie's blood-curdling scream as she discovers Charlie's headless body in the car. We even get a gruesome look at her severed head on the side of the road as it is being devoured by ants.<br><br>Annie becomes detached and inconsolable after Charlie's death, avoiding Peter and even sort of hating him. Peter himself is wracked with guilt to the point where he suffers a painful physical reaction at school while smoking weed with his friends. He even appears to hallucinate seeing Charlie in his room, down to hearing the tongue-clicking sound she would always make. Annie returns to the support group and then meets a woman named Joan (Ann Dowd), who invites Annie to speak with her because she knows what it is like to lose a child.<br><br>Annie encounters a woman named Joan who helps her perform a seance to contact Charlie, only for supernatural events to plague the family. It is soon revealed that Ellen and Joan were part of a cult that tried to summon the demon Paimon into the body of a male in the family, but he had previously settled in Charlie's body, so nearly everything that happens to the Graham family was orchestrated by Ellen and Joan.<br><br>After Annie attempts to get rid of the hauntings, her husband Steven is burned alive, and her own body gets briefly possessed to kill herself before Peter jumps out a window to his own death. Paimon uses this as an opportunity to take over his body and join the cult where they bow to him.";
-                }
-            </script>   
-           
-            <section class="article_area">    
-                <div class="movie_title">Hereditary</div>
-                 <div class="rating_container">
-                    <img class = "rating_img"  src="../img/knifefill.png" alt="">
-                    <img class = "rating_img"  src="../img/knifefill.png" alt="">
-                    <img class = "rating_img"  src="../img/knifefill.png" alt="">
-                    <img class = "rating_img"  src="../img/knifeempty.png" alt="">
-                    <img class = "rating_img"  src="../img/knifeempty.png" alt="">
+                    <video loop muted autoplay  poster="../img/posters/hereditary-poster.jpg" title="Video" class="fullscreen-bg__video">
+                            <source src = "../videos/hereditary.mp4"  type = "video/mp4">
+                    </video>
                 </div>
-                <div class="article_container">
-                    <div id="current_article">
-                        <article>
-                            The film follows the Grahams, who are dealing with their grief after the death of their matriarch. Daughter Annie (Toni Collette), her husband Steve (Gabriel Byrne), and her son and daughter (Alex Wolfe and Milly Shapiro) all deal with it in different ways. Annie throws herself into her work, building miniature dioramas with painstaking detail. Steve tries to hold everyone together. Peter smokes tons of weed and hits on girls, seemingly unaffected. And Charlie… well, she was closer to grandma than anyone else. Soon she starts seeing her places. And mutilates a dead bird. And makes frightening sculptures…<br><br>After another horrific event occurs, and things take a sharp turn into the horrific and gothic landscape the trailers promised. You will find zero spoilers here — suffice to say that things get dark. Really dark — the kind of dark that will have you squirming in your seat and maybe turning away when it becomes too much. By the end you realize you have been so engrossed in what is unfolding in front of your eyes that you are not breathing correctly, and your fingers hurt from gripping the armrests. <br><br>The cast is excellent. There is just something so special about watching actors operating on such a high level. Collette has never been better — her manic nature as the film progresses is a sight to behold. Byrne does some of his best work playing the husband who cannot feel anything but helplessly watch as his life unravels. Both kids are great, with Wolfe standing out especially. Without getting into spoilers, he is asked to do a lot and delivers in spades right up until the end shots. Milly Shapiro does so much with just a look on her face and a click of her tongue. <br><br>
-                        </article>
-                    </div>
+                <!--Menu-->
+                <div class="frontpage"> </div>
+                <div id='nav'>
+                    <ul>
+                        <li><a href="../index.html" class='active'>Home</a></li>
+                        <li><a  title="Click to do something" href="#" onclick="changeToNospoiler();return false;">No Spoilers</a></li>
+                        <li><a   title="Click to do something" href="#" onclick="changeToSpoiler();return false;">Spoilers</a></li> 
+                    </ul>
+                </div>
+                
+                <script >
+                    window.onscroll = function() {myFunction()};
+                    var nav = document.getElementById("nav");
+                    var sticky = nav.offsetTop;
+
+                    function myFunction() {
+                        if (window.pageYOffset >= sticky) {
+                            nav.classList.add("sticky")
+                        } else {
+                            nav.classList.remove("sticky");
+                        }
+                    }
+                    
+                </script>
+                
+                <!-- Article-->
+                <section class="content">
+                    <!-- Change text-->
+                    <script >
+                        function changeToNospoiler(){
+                            document.getElementById("current_article").innerHTML = "The film follows the Grahams, who are dealing with their grief after the death of their matriarch. Daughter Annie (Toni Collette), her husband Steve (Gabriel Byrne), and her son and daughter (Alex Wolfe and Milly Shapiro) all deal with it in different ways. Annie throws herself into her work, building miniature dioramas with painstaking detail. Steve tries to hold everyone together. Peter smokes tons of weed and hits on girls, seemingly unaffected. And Charlie… well, she was closer to grandma than anyone else. Soon she starts seeing her places. And mutilates a dead bird. And makes frightening sculptures…<br><br>After another horrific event occurs, and things take a sharp turn into the horrific and gothic landscape the trailers promised. You will find zero spoilers here — suffice to say that things get dark. Really dark — the kind of dark that will have you squirming in your seat and maybe turning away when it becomes too much. By the end you realize you have been so engrossed in what is unfolding in front of your eyes that you are not breathing correctly, and your fingers hurt from gripping the armrests. <br><br>The cast is excellent. There is just something so special about watching actors operating on such a high level. Collette has never been better — her manic nature as the film progresses is a sight to behold. Byrne does some of his best work playing the husband who cannot feel anything but helplessly watch as his life unravels. Both kids are great, with Wolfe standing out especially. Without getting into spoilers, he is asked to do a lot and delivers in spades right up until the end shots. Milly Shapiro does so much with just a look on her face and a click of her tongue. <br><br>";
+                        }
+                        function changeToSpoiler(){
+                            document.getElementById("current_article").innerHTML =  "The film starts with an obituary for Ellen Leigh, who is survived by her daughter Annie Graham (Toni Collette) and her grandchildren. Annie attends her mother's funeral with her husband Steven (Gabriel Byrne) and their kids Peter (Alex Wolff) and Charlie (Milly Shapiro). Annie gives a eulogy for her mother, pointing out that there are people there that she doesn't know and that Ellen was into things that Annie knew little about.<br><br>At Charlie's school, a bird hits a window during a test. After class, Charlie swipes a pair of scissors and cuts the bird's head off. She brings it home and makes a doll with it. In her room, she notices a blue flash of light surrounding her. She then walks outside and sees what appears to be Ellen surrounded by flames before Annie scolds her and pulls her back into the house. Peter asks Annie if he can borrow one of his parents' cars to go to a party, and Annie makes him take Charlie with him.<br><br>At the party, Peter leaves Charlie alone while he goes to smoke weed. She eats chocolate cake with nuts in it and she begins to suffer an allergic reaction before going into anaphylactic shock. Peter rushes Charlie to the hospital, and she opens the window to stick her head out and breathe better. Peter sees an animal on the side of the road and swerves hard, causing Charlie's head to hit a telephone pole, decapitating her. Peter sits in shock and silence before driving home slowly and quietly going home. The next morning, he hears Annie's blood-curdling scream as she discovers Charlie's headless body in the car. We even get a gruesome look at her severed head on the side of the road as it is being devoured by ants.<br><br>Annie becomes detached and inconsolable after Charlie's death, avoiding Peter and even sort of hating him. Peter himself is wracked with guilt to the point where he suffers a painful physical reaction at school while smoking weed with his friends. He even appears to hallucinate seeing Charlie in his room, down to hearing the tongue-clicking sound she would always make. Annie returns to the support group and then meets a woman named Joan (Ann Dowd), who invites Annie to speak with her because she knows what it is like to lose a child.<br><br>Annie encounters a woman named Joan who helps her perform a seance to contact Charlie, only for supernatural events to plague the family. It is soon revealed that Ellen and Joan were part of a cult that tried to summon the demon Paimon into the body of a male in the family, but he had previously settled in Charlie's body, so nearly everything that happens to the Graham family was orchestrated by Ellen and Joan.<br><br>After Annie attempts to get rid of the hauntings, her husband Steven is burned alive, and her own body gets briefly possessed to kill herself before Peter jumps out a window to his own death. Paimon uses this as an opportunity to take over his body and join the cult where they bow to him.";
+                        }
+                    </script>   
+                
+                    <section class="article_area">    
+                        <div class="movie_title">Hereditary</div>
+                        <div class="rating_container">
+                            <img class = "rating_img"  src="../img/knifefill.png" alt="">
+                            <img class = "rating_img"  src="../img/knifefill.png" alt="">
+                            <img class = "rating_img"  src="../img/knifefill.png" alt="">
+                            <img class = "rating_img"  src="../img/knifeempty.png" alt="">
+                            <img class = "rating_img"  src="../img/knifeempty.png" alt="">
+                        </div>
+                        <div class="article_container">
+                            <div id="current_article" class="article_item">
+                                <article >
+                                    The film follows the Grahams, who are dealing with their grief after the death of their matriarch. Daughter Annie (Toni Collette), her husband Steve (Gabriel Byrne), and her son and daughter (Alex Wolfe and Milly Shapiro) all deal with it in different ways. Annie throws herself into her work, building miniature dioramas with painstaking detail. Steve tries to hold everyone together. Peter smokes tons of weed and hits on girls, seemingly unaffected. And Charlie… well, she was closer to grandma than anyone else. Soon she starts seeing her places. And mutilates a dead bird. And makes frightening sculptures…<br><br>After another horrific event occurs, and things take a sharp turn into the horrific and gothic landscape the trailers promised. You will find zero spoilers here — suffice to say that things get dark. Really dark — the kind of dark that will have you squirming in your seat and maybe turning away when it becomes too much. By the end you realize you have been so engrossed in what is unfolding in front of your eyes that you are not breathing correctly, and your fingers hurt from gripping the armrests. <br><br>The cast is excellent. There is just something so special about watching actors operating on such a high level. Collette has never been better — her manic nature as the film progresses is a sight to behold. Byrne does some of his best work playing the husband who cannot feel anything but helplessly watch as his life unravels. Both kids are great, with Wolfe standing out especially. Without getting into spoilers, he is asked to do a lot and delivers in spades right up until the end shots. Milly Shapiro does so much with just a look on her face and a click of her tongue. <br><br>
+                                </article>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+            </section>
+            <section class="footer">
+                <div class="footer_text">
+                    <p>Code First Girls 2020</p>
+                    <p>Designed in London by Kitti, Sabina and Sara</p>
                 </div>
             </section>
+            </body>
         </section>
-        <section class="footer">
-            <div class="footer_text">
-                <p>Code First Girls 2020</p>
-                <p>Designed in London by Kitti, Sabina and Sara</p>
-            </div>
-         </section>
     </body>
 </html>

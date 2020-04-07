@@ -23,7 +23,7 @@ a:hover{
     overflow: auto;
     
 }
-.artticle_item{
+.article_item{
     padding: 0;
     margin:0;
     margin-bottom: 10em;
@@ -38,7 +38,7 @@ a:hover{
     height: 100%;
     width: 100%;
     background-color: black;
-    padding: 3%;
+    padding-top: 3%;
 }
 
 .movie_title{
@@ -47,7 +47,7 @@ a:hover{
     margin: 50px auto; 
     display: block;
    
-    font-size: 2.5vw;
+    font-size: 3rem;
     color: rgb(209, 209, 209);
 }
 
