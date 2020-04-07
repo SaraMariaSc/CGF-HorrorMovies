@@ -43,10 +43,18 @@ a:hover{
 
 .movie_title{
     height: 1rem;
-    width: 80%;
+    
     margin: 50px auto; 
     display: block;
    
     font-size: 2.5vw;
     color: rgb(209, 209, 209);
 }
+
+.rating_container{
+    display: flex;
+    position: relative;
+}
+ .rating_img{
+     width: 30px;
+ }
