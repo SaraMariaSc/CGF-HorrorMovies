@@ -9,6 +9,145 @@
         <link rel="stylesheet" href="../css/style.css" type="text/css">
         <link rel="stylesheet" href="../static/index_css.css">
         <link rel="stylesheet" href="../css/articles.css">
+        <style>
+            body{ background: #fafafa;}
+            .widget-area.blank {
+            background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+            -webkit-box-shadow: none;
+            -moz-box-shadow: none;
+            -ms-box-shadow: none;
+            -o-box-shadow: none;
+            box-shadow: none;
+            }
+            body .no-padding {
+            padding: 0;
+            }
+            .widget-area {
+            background-color: #fff;
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+            -ms-border-radius: 4px;
+            -o-border-radius: 4px;
+            border-radius: 4px;
+            -webkit-box-shadow: 0 0 16px rgba(0, 0, 0, 0.05);
+            -moz-box-shadow: 0 0 16px rgba(0, 0, 0, 0.05);
+            -ms-box-shadow: 0 0 16px rgba(0, 0, 0, 0.05);
+            -o-box-shadow: 0 0 16px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 0 16px rgba(0, 0, 0, 0.05);
+            float: left;
+            margin-top: 30px;
+            padding: 25px 30px;
+            position: relative;
+            width: 100%;
+            }
+            .status-upload {
+            background: none repeat scroll 0 0 #f5f5f5;
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+            -ms-border-radius: 4px;
+            -o-border-radius: 4px;
+            border-radius: 4px;
+            float: left;
+            width: 100%;
+            }
+            .status-upload form {
+            float: left;
+            width: 100%;
+            }
+            .status-upload form textarea {
+            background: none repeat scroll 0 0 #fff;
+            border: medium none;
+            -webkit-border-radius: 4px 4px 0 0;
+            -moz-border-radius: 4px 4px 0 0;
+            -ms-border-radius: 4px 4px 0 0;
+            -o-border-radius: 4px 4px 0 0;
+            border-radius: 4px 4px 0 0;
+            color: #777777;
+            float: left;
+            font-family: Lato;
+            font-size: 14px;
+            height: 142px;
+            letter-spacing: 0.3px;
+            padding: 20px;
+            width: 100%;
+            resize:vertical;
+            outline:none;
+            border: 1px solid #F2F2F2;
+            }
+
+            .status-upload ul {
+            float: left;
+            list-style: none outside none;
+            margin: 0;
+            padding: 0 0 0 15px;
+            width: auto;
+            }
+            .status-upload ul > li {
+            float: left;
+            }
+            .status-upload ul > li > a {
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+            -ms-border-radius: 4px;
+            -o-border-radius: 4px;
+            border-radius: 4px;
+            color: #777777;
+            float: left;
+            font-size: 14px;
+            height: 30px;
+            line-height: 30px;
+            margin: 10px 0 10px 10px;
+            text-align: center;
+            -webkit-transition: all 0.4s ease 0s;
+            -moz-transition: all 0.4s ease 0s;
+            -ms-transition: all 0.4s ease 0s;
+            -o-transition: all 0.4s ease 0s;
+            transition: all 0.4s ease 0s;
+            width: 30px;
+            cursor: pointer;
+            }
+            .status-upload ul > li > a:hover {
+            background: none repeat scroll 0 0 #606060;
+            color: #fff;
+            }
+            .status-upload form button {
+            border: medium none;
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+            -ms-border-radius: 4px;
+            -o-border-radius: 4px;
+            border-radius: 4px;
+            color: #fff;
+            float: right;
+            font-family: Lato;
+            font-size: 14px;
+            letter-spacing: 0.3px;
+            margin-right: 9px;
+            margin-top: 9px;
+            padding: 6px 15px;
+            }
+            .dropdown > a > span.green:before {
+            border-left-color: #2dcb73;
+            }
+            .status-upload form button > i {
+            margin-right: 7px;
+            }
+            .comment-wrapper .panel-body {
+                max-height:650px;
+                overflow:auto;
+            }
+
+            .comment-wrapper .media-list .media img {
+                width:64px;
+                height:64px;
+                border:2px solid #e5e7e8;
+            }
+
+            .comment-wrapper .media-list .media {
+                border-bottom:1px dashed #efefef;
+                margin-bottom:25px;
+            }
+        </style>
     </head>
 
     <body style="background-color: black;">    
@@ -40,7 +179,6 @@
                     nav.classList.remove("sticky");
                 }
             }
-            
         </script>
         
         <!-- Article-->
@@ -66,11 +204,70 @@
                 <div class="article_container">
                     <div id="current_article">
                         <article>
-                            In 1971, Carolyn and Roger Perron move into a dilapidated, old farmhouse in Harrisville, Rhode Island with their five daughters. During the first day, the family moves in smoothly except for the dog, who refuses to come into the house. That night, the children play a game called hide-and-clap; while playing, one of the daughters finds the boarded up entrance to a cellar. After Roger inspects the basement with a match, the family goes to bed. Carolyn expresses concern because the dog is barking outside, and one of the daughters feels someone pulling at her feet.
+                            In 1971, Carolyn and Roger Perron move into a dilapidated, 
+                            old farmhouse in Harrisville, Rhode Island with their five 
+                            daughters. During the first day, the family moves in smoothly 
+                            except for the dog, who refuses to come into the house. 
+                            That night, the children play a game called hide-and-clap; 
+                            while playing, one of the daughters finds the boarded up 
+                            entrance to a cellar. After Roger inspects the basement 
+                            with a match, the family goes to bed. Carolyn expresses 
+                            concern because the dog is barking outside, and one of 
+                            the daughters feels someone pulling at her feet.
                         </article><br>
                         <article>
-                            In the morning, Carolyn wakes up with a mysterious bruise and their dog Sadie, is found dead. Over the next couple of days, various paranormal activities occur; doors open and close seemingly by themselves and Carolyn hears clapping when nobody is there. At night, their young daughter Cindy sleepwalks into the eldest daughter's bedroom, where she bangs her head repeatedly against an old wardrobe. The activity culminates in the eldest daughter being attacked by a spirit that looks like an elderly woman. Carolyn seeks the help of Ed and Lorraine Warren, noted paranormal investigators, to validate their concerns. Lorraine senses that a particular malevolent spirit has latched on to the family. They conduct an initial investigation, and conclude they should get involved, explaining to the Perron family that the house may require an exorcism.
+                            In the morning, Carolyn wakes up with a mysterious bruise 
+                            and their dog Sadie, is found dead. Over the next couple 
+                            of days, various paranormal activities occur; doors open 
+                            and close seemingly by themselves and Carolyn hears clapping 
+                            when nobody is there. At night, their young daughter Cindy 
+                            sleepwalks into the eldest daughter's bedroom, where she 
+                            bangs her head repeatedly against an old wardrobe. The 
+                            activity culminates in the eldest daughter being attacked 
+                            by a spirit that looks like an elderly woman. Carolyn seeks 
+                            the help of Ed and Lorraine Warren, noted paranormal 
+                            investigators, to validate their concerns. Lorraine senses 
+                            that a particular malevolent spirit has latched on to the 
+                            family. They conduct an initial investigation, and conclude 
+                            they should get involved, explaining to the Perron family 
+                            that the house may require an exorcism.
                         </article>
+                        <br>
+                        <h4>What do you think?</h4>
+                        <div class="widget-area no-padding blank">
+							<div class="status-upload">
+								<form>
+									<textarea placeholder="What do you think?" ></textarea>
+									<button type="submit" class="btn btn-dark"><i class="fa fa-share"></i> Share</button>
+								</form>
+							</div>
+						</div>
+                        <br>
+                        <br>
+                        <div id="current_article">
+                        <h4>Comments</h4>
+                        <ul class="comment-section">
+                            <ul class="media-list">
+                            <li class="media">
+                                <a href="#" class="pull-left">
+                                    <img src="https://bootdey.com/img/Content/user_1.jpg" alt="" class="img-circle">
+                                </a>
+                                <div class="media-body">
+                                    <span class="text-muted pull-right">
+                                        <small class="text-muted">30 min ago</small>
+                                    </span>
+                                    <strong class="text-success">@MartinoMont</strong>
+                                    <p>
+                                        "The Conjuring" is one of the most thrilling horror 
+                                        film to have come out in recent times. It is up 
+                                        there with "Sinister" as one of the scariest films 
+                                        I have watched. Since it's based off of "true events", 
+                                        it makes it even more interesting. 
+                                        <a href="#">#TheConjuring </a>.
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </section>
